@@ -8,7 +8,7 @@ Add the dependency, as usual:
 
 ```toml
 [dependencies]
-solc = { git = "https://github.com/axic/solc-rust" }
+solc = { git = "https://github.com/brockelmore/solc-rust" }
 ```
 
 In your project use it as:
