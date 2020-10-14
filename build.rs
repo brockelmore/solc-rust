@@ -5,8 +5,12 @@ use cmake::Config;
 
 use std::env;
 use std::path::PathBuf;
+use std::fs::File;
 
 fn main() {
+    let _ = File::create("./solidity/prerelease.txt").unwrap();
+    let _ = File::create("./solidity/cmake/prerelease.txt").unwrap();
+
     let dst = Config::new("solidity")
         .define("TESTS", "OFF")
         .define("TOOLS", "OFF")
